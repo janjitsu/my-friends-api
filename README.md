@@ -8,7 +8,9 @@ Api delivers a list of friends and its relatives
 
 ## Running
 
-```make build && make container```
+```
+make build && make container
+```
 
 ## Docs
 
@@ -19,17 +21,21 @@ http://0.0.0.0:8000/docs
 You can try out requests on the fly
 
 ## Running locally
-```make server```
+```
+make server
+```
 
 ## Testing
-```make test```
+```
+make test
+```
 
 
 ### How it works
 
 * `app/core` - has all friends logic
 * `app/routes` - has all routes built with fast api
-    get_data acts as dependency injection for friends data
+* `app/routes/get_data` - acts as dependency injection for friends data
 * `app/tests` - has all tests
 * `app/main.py` - inits the server loaded by uvicorn
 
